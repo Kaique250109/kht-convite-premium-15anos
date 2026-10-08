@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#100d20" />
+  <meta name="description" content="Um convite digital interativo para uma noite inesquecível. Projeto demonstrativo da KHT Digital." />
+  <title>Isabela — Uma noite para florescer | KHT Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body class="locked">
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <div class="entry" id="entry" aria-labelledby="entry-title" role="dialog" aria-modal="true">
+    <div class="entry-glow" aria-hidden="true"></div>
+    <div class="entry-inner">
+      <span class="eyebrow light">UM CONVITE ESPECIAL PARA VOCÊ</span>
+      <div class="envelope" aria-hidden="true">
+        <div class="envelope-back"></div><div class="envelope-letter">✦</div>
+        <div class="envelope-front"></div><div class="envelope-flap"></div>
+        <div class="seal">I</div>
+      </div>
+      <h1 id="entry-title">Uma noite <em>inesquecível</em> começa aqui.</h1>
+      <p>Um pequeno convite, uma grande celebração.</p>
+      <button class="btn btn-primary" id="openInvitation" type="button">Abrir meu convite <span aria-hidden="true">↗</span></button>
+      <span class="entry-footnote">PROJETO DEMONSTRATIVO · KHT DIGITAL</span>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="site-header" id="topo">
+    <a href="#inicio" class="brand" aria-label="Ir para o início">
+      <span class="brand-monogram">I<span>✦</span></span>
+      <span class="brand-copy">ISABELA <small>XV ANOS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#historia">O convite</a><a href="#programacao">A noite</a><a href="#local">Local</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="sound-toggle" type="button" id="soundToggle" aria-pressed="false" title="Ativar ou desativar som ambiente"><span class="sound-icon">♫</span><span class="sound-label">Som</span><span class="sound-dot"></span></button>
+      <button class="menu-button" id="menuButton" type="button" aria-controls="mobileNav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu do celular" hidden>
+    <a href="#historia">O convite</a><a href="#programacao">A noite</a><a href="#local">Localização</a><a href="#confirmar">Confirmar presença</a>
+  </nav>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-star star-a" aria-hidden="true">✦</div><div class="hero-star star-b" aria-hidden="true">✧</div><div class="hero-star star-c" aria-hidden="true">✦</div>
+      <div class="hero-arc hero-arc-1" aria-hidden="true"></div><div class="hero-arc hero-arc-2" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-sideword" aria-hidden="true">CELEBRAR · SONHAR · FLORESCER</div>
+        <p class="eyebrow reveal">VOCÊ FAZ PARTE DESTE MOMENTO</p>
+        <div class="hero-ornament reveal" aria-hidden="true">✧ <span></span> ✧</div>
+        <p class="hero-pretitle reveal">Uma noite para florescer</p>
+        <h2 id="hero-title" class="hero-name reveal">Isabela<span class="hero-spark" aria-hidden="true">✳</span></h2>
+        <p class="hero-age reveal"><span>meus</span> <strong>15</strong> <span>anos</span></p>
+        <p class="hero-quote reveal">Entre sonhos, flores e estrelas, um novo capítulo começa. E eu quero você fazendo parte dele.</p>
+        <div class="hero-divider reveal"><span>✦</span></div>
+        <div class="hero-date reveal"><span>SÁBADO</span><strong>19 <small>JUN</small> 2027</strong><span>ÀS 19H30</span></div>
+        <a class="btn btn-primary hero-cta reveal" href="#confirmar">Confirmar minha presença <span aria-hidden="true">↗</span></a>
+        <a class="scroll-cue" href="#historia">DESLIZE E DESCUBRA <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-flower flower-one" aria-hidden="true"><span>✿</span></div><div class="hero-flower flower-two" aria-hidden="true"><span>✿</span></div>
+    </section>
+
+    <section class="section invitation-section" id="historia" aria-labelledby="invite-title">
+      <div class="section-header reveal">
+        <p class="eyebrow">CADA MOMENTO TEM SEU BRILHO</p><span class="mini-flower" aria-hidden="true">✧</span>
+        <h2 id="invite-title">Há momentos que merecem <em>ser celebrados.</em></h2>
+        <p>Os 15 anos representam sonhos, descobertas e uma nova fase. Para tornar essa data ainda mais especial, preparei uma noite cheia de carinho — e sua presença vai fazer toda a diferença.</p>
+      </div>
+      <div class="promise-card reveal">
+        <div class="promise-orbit orbit-1" aria-hidden="true"></div><div class="promise-orbit orbit-2" aria-hidden="true"></div>
+        <div class="promise-mark" aria-hidden="true">XV</div>
+        <p>“Que essa noite seja iluminada por bons encontros, sorrisos sinceros e lembranças que durem para sempre.”</p>
+        <span>COM CARINHO, ISABELA</span>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="programacao" aria-labelledby="night-title">
+      <div class="section-header reveal">
+        <p class="eyebrow">OS DETALHES DA NOSSA NOITE</p>
+        <h2 id="night-title">Uma celebração, <em>mil memórias.</em></h2>
+        <p>Uma noite preparada para compartilhar momentos especiais com as pessoas que fazem parte da minha história.</p>
+      </div>
+      <div class="event-panel reveal">
+        <div class="event-detail"><div class="detail-icon" aria-hidden="true">✧</div><span>DATA</span><strong>19 de junho de 2027</strong><small>Sábado</small></div>
+        <div class="event-detail"><div class="detail-icon" aria-hidden="true">◷</div><span>HORÁRIO</span><strong>19h30</strong><small>Chegue para celebrar</small></div>
+        <div class="event-detail"><div class="detail-icon" aria-hidden="true">♧</div><span>TRAJE</span><strong>Social / festa</strong><small>Venha como se sentir especial</small></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-track" aria-hidden="true"></div>
+        <div class="timeline-item"><span class="timeline-time">19H30</span><span class="timeline-node" aria-hidden="true"></span><div><h3>Boas-vindas</h3><p>O começo de uma noite mágica.</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">20H30</span><span class="timeline-node" aria-hidden="true"></span><div><h3>O momento especial</h3><p>Uma celebração inesquecível.</p></div></div>
+        <div class="timeline-item"><span class="timeline-time">21H00</span><span class="timeline-node" aria-hidden="true"></span><div><h3>Vamos festejar!</h3><p>Música, alegria e muitas memórias.</p></div></div>
+      </div>
+    </section>
+
+    <section class="countdown-section" aria-labelledby="countdown-title">
+      <div class="countdown-glow" aria-hidden="true"></div>
+      <div class="countdown-inner reveal">
+        <p class="eyebrow">A CONTAGEM REGRESSIVA COMEÇOU</p>
+        <h2 id="countdown-title">O grande dia <em>está chegando.</em></h2>
+        <div class="countdown-grid" aria-label="Tempo restante até a festa">
+          <div class="count-box"><strong id="days">000</strong><span>DIAS</span></div>
+          <div class="count-box"><strong id="hours">00</strong><span>HORAS</span></div>
+          <div class="count-box"><strong id="minutes">00</strong><span>MINUTOS</span></div>
+          <div class="count-box"><strong id="seconds">00</strong><span>SEGUNDOS</span></div>
+        </div>
+        <p id="countdownMessage" class="countdown-note">Cada dia mais perto de uma nova história.</p>
+      </div>
+    </section>
+
+    <section class="section location-section" id="local" aria-labelledby="location-title">
+      <div class="section-header reveal">
+        <p class="eyebrow">ONDE NOS ENCONTRAMOS</p>
+        <h2 id="location-title">O lugar de <em>celebrar juntos.</em></h2>
+      </div>
+      <div class="location-card reveal">
+        <div class="location-art" aria-hidden="true"><span class="art-circle"></span><span class="art-star a">✦</span><span class="art-star b">✧</span><span class="art-pin">⌖</span><span class="art-caption">UM LUGAR PARA CRIAR MEMÓRIAS</span></div>
+        <div class="location-info">
+          <span class="eyebrow">LOCAL ILUSTRATIVO PARA DEMONSTRAÇÃO</span>
+          <h3>Um lugar especial</h3>
+          <p>Para este modelo demonstrativo, o botão abre a localização pública do Parque Ibirapuera, em São Paulo. <strong>Não existe festa marcada nesse local.</strong></p>
+          <a id="mapsLink" class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Parque%20Ibirapuera%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener noreferrer">Abrir localização de exemplo <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="confirmar" aria-labelledby="rsvp-title">
+      <div class="rsvp-card reveal">
+        <div class="rsvp-decor" aria-hidden="true">✧</div>
+        <p class="eyebrow">VOCÊ É PARTE DA MINHA HISTÓRIA</p>
+        <h2 id="rsvp-title">Sua presença é o meu <em>melhor presente.</em></h2>
+        <p>Será um prazer dividir essa noite com você. Clique no botão para preencher a confirmação demonstrativa.</p>
+        <button class="btn btn-primary" type="button" id="openRsvp">Confirmar presença <span aria-hidden="true">↗</span></button>
+        <span class="demo-tag">DEMONSTRAÇÃO · Nenhuma confirmação é enviada automaticamente</span>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="closing-inner reveal">
+        <span class="closing-ornament" aria-hidden="true">✧</span>
+        <p class="eyebrow">UMA NOITE, INFINITAS LEMBRANÇAS</p>
+        <h2 id="closing-title">Te espero para escrever comigo uma noite <em>inesquecível.</em></h2>
+        <span class="signature">Com carinho, Isabela.</span>
+        <a href="#inicio" class="back-to-top">VOLTAR AO INÍCIO ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>CONVITE FICTÍCIO • DEMONSTRAÇÃO</span><a href="https://www.instagram.com/khtdigital/" target="_blank" rel="noopener noreferrer">Criado por <strong>KHT Digital ↗</strong></a><span>FEITO PARA ENCANTAR</span></footer>
+
+  <div class="modal" id="rsvpModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+      <button class="modal-close" type="button" id="closeRsvp" aria-label="Fechar janela">×</button>
+      <p class="eyebrow">CONFIRMAÇÃO DE PRESENÇA</p>
+      <h2 id="modalTitle">Vamos celebrar <em>juntos?</em></h2>
+      <p id="modalDesc">Preencha os campos para criar uma mensagem de WhatsApp. Como é um modelo demonstrativo, você poderá escolher o contato antes de enviar.</p>
+      <form id="rsvpForm">
+        <label for="guestName">Seu nome</label><input id="guestName" name="guestName" type="text" minlength="2" maxlength="60" placeholder="Como podemos te chamar?" required autocomplete="name" />
+        <label for="attendance">Você poderá comparecer?</label><select name="attendance" id="attendance"><option value="Sim, estarei presente!">Sim, estarei presente!</option><option value="Infelizmente não poderei comparecer.">Infelizmente não poderei comparecer.</option></select>
+        <label for="guestCount">Quantidade de pessoas (incluindo você)</label><select id="guestCount" name="guestCount"><option value="1">1 pessoa</option><option value="2">2 pessoas</option><option value="3">3 pessoas</option><option value="4">4 pessoas</option><option value="5">5 pessoas</option></select>
+        <button class="btn btn-primary form-submit" type="submit">Preparar mensagem no WhatsApp <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="privacy-note">Este formulário não armazena seus dados. Nenhuma mensagem é enviada sem sua confirmação no WhatsApp.</p>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
